@@ -14,16 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>database</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>database/nerukhomist.sql</name>
-			<type>1</type>
-			<location>C:/Users/Назар/Documents/GitHub/nerukhomist-UPP-/nerukhomist [UPP]/database/nerukhomist.sql</location>
-		</link>
-	</linkedResources>
 </projectDescription>
