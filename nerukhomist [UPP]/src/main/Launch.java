@@ -1,10 +1,16 @@
 package main;
 
+import gui.EditItemList;
+
+import javax.swing.JFrame;
+
 public class Launch {
-	// cloned from github
-	//test commit
+
 	public static void main(String[] args) {	
-	System.out.println("LOL"); 
+		    JFrame a=new EditItemList();
+		    a.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		    a.setVisible(true);
+		 
 	}
 
 }
