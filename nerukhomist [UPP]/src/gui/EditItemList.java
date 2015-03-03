@@ -44,12 +44,18 @@ public class EditItemList extends JFrame {
     JTable table = new JTable(buildTableModel(rs));
     table.setEnabled(false);
     getContentPane().add(table);
+    
+    rs.close();
+    stm.close();
+    con.close();	
     }
     catch(SQLException e)
     {
     	
     }
+  
     
+   
     }
     
 	public static DefaultTableModel buildTableModel(ResultSet rs)
