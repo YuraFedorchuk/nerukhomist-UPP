@@ -40,7 +40,9 @@ public class EditItemList extends JFrame {
     try
     {
     Statement stm=con.createStatement();
-    ResultSet rs=stm.executeQuery("select * from item limit 10");
+    ResultSet rs=stm.executeQuery("select item.rooms_quantity,item.total_area,item.price,item.item_type,item.`status`,item.`begin`,address.city "
+    		+ "from item inner join address on item.address_id=address.id "
+    		+ "limit 0,10 ");
     JTable table = new JTable(buildTableModel(rs));
     table.setEnabled(false);
     getContentPane().add(table);
@@ -51,11 +53,8 @@ public class EditItemList extends JFrame {
     }
     catch(SQLException e)
     {
-    	
     }
-  
-    
-   
+
     }
     
 	public static DefaultTableModel buildTableModel(ResultSet rs)
